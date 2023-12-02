@@ -3,7 +3,7 @@
 :page_with_curl: [**[Paper]**](https://ieeexplore.ieee.org/abstract/document/10290075)
 :rocket: [**[Demo]**](https://colab.research.google.com/github/cidl-auth/deep_gaussian/blob/main/demo.ipynb)&nbsp;
 
-Official PyTorch implementation of the paper **"END-TO-END TRAINABLE GAUSSIAN FILTERING FOR ELECTROCARDIOGRAM SIGNAL CLASSIFICATION USING DEEP LEARNING"**
+Official PyTorch implementation of the paper **"End-to-End Trainable Gaussian Filtering for Electrocardiogram Signal Classification Using Deep Learning"**
 by Angelos Nalmpantis, Nikolaos Passalis and Anastasios Tefas (EUSIPCO 2023)
 
 ## Overview
