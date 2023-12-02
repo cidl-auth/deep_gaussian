@@ -1,15 +1,15 @@
 # END-TO-END TRAINABLE GAUSSIAN FILTERING FOR ELECTROCARDIOGRAM SIGNAL CLASSIFICATION USING DEEP LEARNING
 
-:page_with_curl: [**[Paper]**](https://github.com/cidl-auth/deep_gaussian)&nbsp;
+:page_with_curl: [**[Paper]**](https://ieeexplore.ieee.org/abstract/document/10290075)
 :rocket: [**[Demo]**](https://colab.research.google.com/github/cidl-auth/deep_gaussian/blob/main/demo.ipynb)&nbsp;
 
 Official PyTorch implementation of the paper **"END-TO-END TRAINABLE GAUSSIAN FILTERING FOR ELECTROCARDIOGRAM SIGNAL CLASSIFICATION USING DEEP LEARNING"**
 by Angelos Nalmpantis, Nikolaos Passalis and Anastasios Tefas (EUSIPCO 2023)
 
 ## Overview
-This repository contains a practical tool that employs Gaussian filters to denoise an input signal and extract its high-order derivatives. The amount of denoising is incorporated into the learning process in an end-to-end manner, enabling a model to select the cut-off frequency via gradient-based optimization. The layer applying the Gaussian filters can be incorporated into any DL pipeline that is used for time-series analysis.
+This repository contains a practical tool that employs Gaussian filters to denoise an input signal and extract its high-order derivatives. The cut-off frequency is incorporated into the learning process in an end-to-end manner, enabling the model to select the appropriate amount of denoising via gradient-based optimization. The layer applying the Gaussian filters can be incorporated into any DL pipeline that is used for time-series analysis.
 
-<img src="https://github.com/cidl-auth/deep_gaussian/blob/main/figures/input_output.png" width="600" height="600" />
+<img src="https://github.com/cidl-auth/deep_gaussian/blob/main/figures/method.png"/>
 
 ### Example
 
@@ -29,8 +29,17 @@ Out [6]: torch.Size([10, 3, 200])
 
 ```
 
+<img src="https://github.com/cidl-auth/deep_gaussian/blob/main/figures/input_output.png" width="600" height="600" />
+
 ## Citation
 If you use this code or find our work otherwise useful, please consider citing our paper:
 ```
-TO BE AVAILABLE SOON
+@inproceedings{nalmpantis2023end,
+  title={End-to-End Trainable Gaussian Filtering for Electrocardiogram Signal Classification Using Deep Learning},
+  author={Nalmpantis, Angelos and Passalis, Nikolaos and Tefas, Anastasios},
+  booktitle={2023 31st European Signal Processing Conference (EUSIPCO)},
+  pages={1060--1064},
+  year={2023},
+  organization={IEEE}
+}
 ```
